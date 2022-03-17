@@ -1,0 +1,15 @@
+.row {
+    background-color:lightgray;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 4% 0;
+}
+
+.form-control {
+    padding: 10px 20px;
+    margin: 40px auto 0 auto;
+    max-width: 50%;
+}

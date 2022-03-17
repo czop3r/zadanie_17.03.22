@@ -1,0 +1,19 @@
+.search-box {
+    padding: 10px 20px;
+    margin: 40px auto 20px auto;
+    max-width: 50%;
+}
+
+ul li {
+    border: 0;
+    padding-left: 20px;
+}
+
+ul li:nth-child(even){
+    background-color:whitesmoke;
+}
+
+ul li:hover {
+    cursor: pointer;
+    background-color: rgb(228, 228, 228);
+}

@@ -1,0 +1,19 @@
+<div class="input-group mb-3 search-box">
+  <input 
+    type="text" 
+    class="form-control" 
+    placeholder="Szukaj użytkownika"  
+    [(ngModel)]="filtred">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" (click)="onClear()">Wyczyść</button>
+      </div>
+</div>
+<div class="container">
+    <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let user of users | filter : filtred" (click)="onUserDetail(user)">
+           {{ user.username }}
+        </li>
+      </ul>
+</div>

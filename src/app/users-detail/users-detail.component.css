@@ -1,0 +1,19 @@
+.right p{
+    text-align: right;
+}
+
+.left p{
+    text-align: left;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.row .col-1 {
+    margin: auto ;
+}
+
+.left p, .left tr td  {
+    font-weight: bold;
+}

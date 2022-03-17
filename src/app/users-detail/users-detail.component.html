@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-6">
+        <h3>Dane użytkownika</h3>
+    </div>
+    <div class="col-1">
+        <button class="btn btn-outline-secondary btn-sm" (click)="onCancel()">Cofnij</button>
+      </div>
+    <hr>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-2 right">
+            <p>Użytkownik: </p>
+        </div>
+        <div class="col-2 left">
+            <p>{{ user.username }}</p>
+        </div>
+        <div class="col-2 right">
+            <p>Email: </p>
+        </div>
+        <div class="col-6 left">
+            <p>{{ user.email }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 right">
+            <p>Imię i Nazwisko: </p>
+        </div>
+        <div class="col-2 left">
+            <p>{{ user.name }}</p>
+        </div>
+        <div class="col-2 right">
+            <p>Adres: </p>
+        </div>
+        <div class="col-6 left">
+            <table>
+                <tr>
+                    <td>{{ user.address.street }}</td>
+                </tr>
+                <tr>
+                    <td>{{ user.address.suite }}</td>
+                </tr>
+                <tr>
+                    <td>{{ user.address.city }} {{ user.address.zipcode }} </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
